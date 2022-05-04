@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: remove net-tools
+      apt:
+        name: open-vm-tools
+        state: absent
