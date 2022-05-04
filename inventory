@@ -1,4 +1,17 @@
+[master]
 10.10.10.14
+
+[nodes]
 10.10.10.15
 10.10.10.16
+
+[master:vars]
+ansible_ssh_user=<USER>
+ansible_ssh_pass=<PASSWORD>
+ansible_become_pass=<PASSWORD>
+
+[nodes:vars]
+ansible_ssh_user=<USER>
+ansible_ssh_pass=<PASSWORD>
+ansible_become_pass=<PASSWORD>
 
